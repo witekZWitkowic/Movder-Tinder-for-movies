@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* ----------- GLOBAL ----------- */
-html{
+  html{
     overflow: hidden;
   }
   main {
@@ -14,26 +14,43 @@ html{
   .bg-hero-section {
       position: relative;
     }
-    .bg-hero-section::before {
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-image: linear-gradient(to right bottom,rgba(109, 109, 109, 0.676),rgba(7, 7, 7, 0.955)),
-      url('./assets/bgPicture.png');
-      background-size: cover;
-      background-position: center;
-      z-index: -1;
-      opacity: 0.80;
-    }
+  .bg-hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient(to right bottom,rgba(109, 109, 109, 0.676),rgba(7, 7, 7, 0.955)),
+    url('./assets/bgPicture.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.80;
+  }
 
-    .hero-text{
-        background-clip: text;
-          -webkit-background-clip: text;
-          color: rgba(168, 168, 168, 0.103);
-          background-image: url('https://cdn.marvel.com/content/1x/mi_wallpaper_mas_mob_01.jpg');
-        background-size: cover;
-        background-position: top;
-        }
+  .hero-text{
+      background-clip: text;
+        -webkit-background-clip: text;
+        color: rgba(245, 242, 242, 0);
+        background-image: linear-gradient(139deg, rgba(253,41,123,.8) 0%, rgba(255,88,100,.8) 50%, rgba(255,101,91,.8) 100%), url('https://cdn.marvel.com/content/1x/mi_wallpaper_mas_mob_01.jpg');
+      background-size: cover;
+      background-position: top;
+      }
+/* ------------- CARDS -----------*/
+  .card-bg{
+    position: absolute;
+  }
+  .card-bg {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient(to right bottom,rgba(69, 69, 69, 0.658),rgba(135, 135, 135, 0.291)),
+    url('https://www.fubiz.net/wp-content/uploads/2016/03/bwemptycinemas1-900x698.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
