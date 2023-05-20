@@ -1,7 +1,10 @@
+import Main from "./components/organisms/Main"
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <Main />
+    </>
   )
 }
 
